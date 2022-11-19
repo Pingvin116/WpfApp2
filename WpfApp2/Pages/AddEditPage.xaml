@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp2.Pages.AddEditPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2.Pages"
+        mc:Ignorable="d"
+        Title="AddEditPage" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock>Имя</TextBlock>
+            <TextBlock Text="{Binding  Name}"  Width="200" TextWrapping="Wrap" />
+            <TextBlock>Описание</TextBlock>
+            <TextBlock Text="{Binding  Description}" Height="30" Width="600" TextWrapping="Wrap"/>
+            <TextBlock>Вес</TextBlock>
+            <TextBlock Text="{Binding  Weight}"  Width="200" TextWrapping="Wrap"/>
+            <TextBlock>Высота</TextBlock>
+            <TextBlock Text="{Binding  Height}"  Width="200" TextWrapping="Wrap"/>
+            <TextBlock>Ширина</TextBlock>
+            <TextBlock Text="{Binding  Width}"  Width="200" TextWrapping="Wrap"/>
+            <TextBlock>Ц    ЕНА</TextBlock>
+            <TextBlock Text="{Binding  Cost}"  Width="200" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Window>
